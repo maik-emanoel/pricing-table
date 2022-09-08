@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --yellow: #ffcc29;
+  --blue: #1d539e;
+  --gray: #828799;
+  --page-background: #f9fbfc;
+  --text-color: #1E2338;
+
+
+  font-size: 62.5%;
+  font-family: 'Open sans', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, var(--blue) 50%, var(--page-background) 50%);
+  width: 100%;
+  min-height: 100vh;
+}
+
+ul li{
+  list-style: none;
+}
+
+/* ==================== HEADER ======================= */
+
+header {
+  width: 55.3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 10rem auto 6.5rem;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  color: #ffffff;
+
+  margin-bottom: 2rem;
+}
+
+header p {
+  width: 100%;
+  height: 5rem;
+
+  font-weight: 300;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2.5rem;
+
+  color: #ffffff;
+}
+
+/* ================ PRICING TABLES ================ */
+.pricingTables {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+
+  justify-content: center;
+}
+
+/* ================ CONTAINER ====================== */
+.pricingTables .container {
+  width: 35.5rem;
+  height: 47rem;
+
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+  background: #ffffff;
+
+  position: relative;
+  margin-bottom: 11rem;
+
+  align-self: center;
+}
+
+.container h3 {
+  font-weight: 600;
+  font-size: 1.8rem;
+
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.container .price {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 3.6rem;
+
+  color: var(--text-color);
+
+  margin-bottom: 1rem;
+}
+
+.container .price span {
+  font-size: 1.8rem;
+}
+
+.container .time {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.container p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+
+  position: relative;
+  margin-bottom: 4.1rem;
+  color: var(--gray);
+}
+
+.container p::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+
+  left: 0px;
+  bottom: -20px;
+
+  position: absolute;
+  background: #EEEEEE;
+}
+
+ul li{
+  display: flex;
+  justify-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+ul li .benefits {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--gray);
+}
+
+.btn {
+  width: calc(100% - 60px);
+  height: 4.9rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  border: 1px solid #1D539E;
+  border-radius: 10px;
+
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: var(--blue);
+
+  position: absolute;
+  left: 29px;
+  bottom: 30px;
+
+  transition: .3s ease-in-out;
+}
+
+.btn:hover {
+  width: calc(100% - 50px);
+  left: 25px;
+  height: 5.1rem;
+}
+
+/* ============== CONTAINER BASIC ============== */
+
+.container.basic {
+  height: 49rem;
+  padding: initial;
+}
+
+.container.basic header {
+  margin: 0;
+  width: 100%;
+  height: 7.6rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 2rem 0 3rem;
+  background: var(--yellow);
+
+  box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+  border-radius: 8px 8px 0px 0px;
+}
+
+.container.basic h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--blue);
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 9.4rem;
+  height: 3.2rem;
+
+  color: #ffffff;
+  background: var(--blue);
+  border-radius: 40px;
+
+  font-weight: 600;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.container.basic .content {
+  padding: 1rem 3rem 3rem;
+}
+
+.container.basic ul li .benefits{
+  font-size: 1.6rem;
+}
+
+.container.basic .btn {
+  height: 5.1rem;
+  bottom: 43px;
+
+  font-size: 2rem;
+  background: var(--blue);
+  color: #ffffff;
+
+  transition: .3s ease-in-out;
+}
+
+.container.basic .btn:hover {
+  width: calc(100% - 50px);
+  left: 25px;
+  height: 5.3rem;
+}
+
+/*================ RESPONSIVIDADE ================= */
+@media (max-width: 1024px) {
+  body {
+    background: linear-gradient(to bottom, var(--blue) 65%, var(--page-background) 35%);
+  }
+
+  .pricingTables {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "free profissional"
+    "basic basic";
+    gap: initial;
+  }
+
+  .pricingTables .container {
+    margin-bottom: 0px;
+    justify-self: center;
+  }
+
+  .container:nth-of-type(1) {
+    grid-area: free;
+  }
+  .container:nth-of-type(2) {
+    grid-area: basic;
+    margin-bottom: 10rem;
+    width: 38rem;
+  }
+
+  .container:nth-of-type(3) {
+    grid-area: profissional;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricingTables {
+    margin-inline: 20px;
+  }
+
+  .pricingTables .container {
+    width: 33rem;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    background: linear-gradient(to bottom, var(--blue) 56%, var(--page-background) 44%);
+  }
+
+  header {
+    margin: 8rem auto 6.5rem;
+    width: 85%;
+  }
+
+  header h1 {
+    text-align: center;
+  }
+
+  .pricingTables {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .container:nth-of-type(2) {
+    margin-bottom: initial;
+  }
+
+  .container:nth-of-type(3) {
+    margin-bottom: 10rem;
+  }
+}
+
+@media (max-width: 375px) {
+  header h1 {
+    font-size: 4rem;
+  }
+
+  .pricingTables {
+    margin-inline: auto;
+  }
+
+  .pricingTables .container {
+    width: 80%;
+  }
+
+  .container.basic .btn {
+    bottom: 21px;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    background: linear-gradient(to bottom, var(--blue) 54%, var(--page-background) 46%);
+  }
+
+  header h1 {
+    font-size: 3.9rem;
+  }
+
+  .container:nth-of-type(3) {
+    height: 53rem;
+  }
+}
