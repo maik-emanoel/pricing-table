@@ -294,7 +294,7 @@ header a {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 740px) {
   body {
     background: linear-gradient(to bottom, var(--blue) 56%, var(--page-background) 44%);
   }
