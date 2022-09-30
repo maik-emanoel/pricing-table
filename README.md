@@ -1,4 +1,4 @@
-## Pricing table
+# Pricing table
 
 ![preview](./assets/preview.png)
 
