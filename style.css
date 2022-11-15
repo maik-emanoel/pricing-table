@@ -172,9 +172,7 @@ ul li .benefits {
 }
 
 .btn:hover {
-  width: calc(100% - 50px);
-  left: 25px;
-  height: 5.1rem;
+  transform: scale(1.05);
 }
 
 /* ============== CONTAINER BASIC ============== */
@@ -244,9 +242,7 @@ header a {
 }
 
 .container.basic .btn:hover {
-  width: calc(100% - 50px);
-  left: 25px;
-  height: 5.3rem;
+  transform: scale(1.05);
 }
 
 /*================ RESPONSIVIDADE ================= */
@@ -294,7 +290,7 @@ header a {
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 425px) {
   body {
     background: linear-gradient(to bottom, var(--blue) 56%, var(--page-background) 44%);
   }
