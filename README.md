@@ -1,11 +1,23 @@
-# Pricing table
+<h1 align="center"> Pricing Table </h1>
 
-![preview](./assets/preview.png)
+![preview](./.github/preview.png)
 
-## Contando um pouco sobre o projeto
-Este projeto foi desenvolvido a partir da área de desafios do programa Discover da Rocketseat. Contudo, tornei-o responsivo, pois no desafio apenas tinha o layout para telas maiores.
+[Clique aqui para acessar](https://maik-emanoel.github.io/pricing-table/)
 
-## Tecnologias utilizadas 
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>
+</p>
+
+## 🚀 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML
 - CSS
+
+## 💻 Projeto
+
+Este projeto é uma página de tabela de preços, onde o usuário poderá visualizar qual serviço atende melhor suas necessidades. <br>
+
+Obs: Projeto construído a partir da área de desafios do Programa Discover da [Rocketseat](https://rocketseat.com.br). Após ter construído o projeto tornei-o responsivo.
