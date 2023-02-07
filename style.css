@@ -281,16 +281,6 @@ header a {
 }
 
 @media (max-width: 768px) {
-  .pricingTables {
-    margin-inline: 20px;
-  }
-
-  .pricingTables .container {
-    width: 33rem;
-  }
-}
-
-@media (max-width: 425px) {
   body {
     background: linear-gradient(to bottom, var(--blue) 56%, var(--page-background) 44%);
   }
@@ -310,6 +300,12 @@ header a {
     align-items: center;
     justify-content: center;
     gap: 40px;
+
+    margin-inline: 20px;
+  }
+
+  .pricingTables .container {
+    width: 33rem;
   }
 
   .container:nth-of-type(2) {
